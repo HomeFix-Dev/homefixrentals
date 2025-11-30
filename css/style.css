@@ -550,10 +550,12 @@ section h2 {
 
 .page-header {
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .page-header p {
-  max-width: 640px;
+  max-width: 700px;
+  margin: 0.25rem auto;
 }
 
 .category-section {
@@ -644,6 +646,17 @@ section h2 {
 .tool-card .tool-note {
   font-size: 0.82rem;
   color: #6b7280;
+}
+
+.tool-addons {
+  font-weight: 600;
+  color: #b45309; /* warm amber-style accent */
+}
+
+.tools-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
 }
 
 /* Cart bar */
@@ -994,4 +1007,52 @@ section h2 {
   .main-nav a {
     margin: 6px 10px;
   }
+}
+
+/* =================
+   FAQ Section
+   ================= */
+
+.faq-section {
+  background: #ffffff;
+  padding: 1.75rem 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+  margin-top: 2.5rem;
+}
+
+.faq-section h2 {
+  margin-top: 0;
+  color: var(--hf-navy);
+  margin-bottom: 1rem;
+}
+
+.faq-item + .faq-item {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.faq-item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  color: var(--hf-navy);
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+
+.site-footer a {
+  color: #f28c28;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
