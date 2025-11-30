@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta name="theme-color" content="#f28c28">
+  <title>Contact Us – HomeFix Rentals</title>
+
+  <meta name="description" content="Contact HomeFix Rentals to book tools and equipment in Bessemer City, NC. Call, text, or submit an online booking request." />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="HomeFix Rentals logo" class="logo-img" />
+        <span class="site-name">HomeFix Rentals</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="tools.html">Tools</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Contact & Booking</h1>
+      <p>Use the form below to request a booking, or reach out directly by call or text.</p>
+
+      <div class="contact-layout">
+        <div>
+          <h2>Booking Request Form</h2>
+
+            <form action="https://formspree.io/f/mblvkbwk" method="POST" class="booking-form">
+              <!-- Formspree config -->
+              <input type="hidden" name="_subject" value="New Booking Request from HomeFix Rentals" />
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <div class="alert-soft">
+                <strong>Heads up:</strong> This form sends a booking request only. We’ll confirm
+                tool availability, deposit amount, and pickup address before you pay anything.
+              </div>
+
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required />
+              </div>
+
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="Best number to reach you" required />
+              </div>
+
+              <div>
+                <label for="email">Email (optional)</label>
+                <input id="email" name="email" type="email" placeholder="you@email.com" />
+              </div>
+
+              <div>
+                <label for="tool">Tool Needed</label>
+                <select id="tool" name="tool" required>
+                  <option value="">Select a tool…</option>
+
+                  <!-- Cutting & Woodworking -->
+                  <option>60V 12" Sliding Miter Saw</option>
+                  <option>FLEXVOLT 60V MAX 8-1/4" Table Saw</option>
+                  <option>V20 RP 7-1/4" Circular Saw</option>
+                  <option>7" Wet Tile Saw</option>
+                  <option>M18 HACKZALL Reciprocating Saw</option>
+                  <option>M18 6-1/2" Circular Saw</option>
+                  <option>M18 Oscillating Multi-Tool</option>
+
+                  <!-- Outdoor & Yard -->
+                  <option>Gas Chainsaw (18" Bar)</option>
+                  <option>M18 Compact Blower</option>
+
+                  <!-- Cleaning -->
+                  <option>DEWALT 3400 PSI Gas Pressure Washer</option>
+                  <option>16 Gallon Wet/Dry Shop Vac</option>
+
+                  <!-- Fastening & Air -->
+                  <option>6 Gal. 150 PSI Air Compressor (w/ Hose)</option>
+                  <option>18GA Brad Nailer (Combo)</option>
+                  <option>16GA Finish Nailer (Combo)</option>
+                  <option>18GA Finish Stapler (Combo)</option>
+                  <option>3-1/2" 21° Framing Nailer</option>
+
+                  <!-- Cordless Power Tools -->
+                  <option>M18 Brushless Grinder</option>
+                  <option>XR 20V Max Brushless Jigsaw</option>
+                  <option>M18 Drill/Driver</option>
+                  <option>M18 1/4" Impact Driver</option>
+                  <option>M18 High Torque Impact Wrench</option>
+
+                  <!-- Bundles -->
+                  <option>Trim & Finish Bundle</option>
+                  <option>Remodel Cutting Bundle</option>
+                  <option>Outdoor Cleanup Bundle</option>
+                  <option>Drill & Driver Bundle</option>
+
+                  <!-- Catch-all -->
+                  <option>Other (describe in notes)</option>
+                </select>
+              </div>
+
+              <div class="form-row-two">
+                <div>
+                  <label for="date">Preferred Date</label>
+                  <input id="date" name="date" type="date" required />
+                </div>
+                <div>
+                  <label for="time">Preferred Pickup Time</label>
+                  <input id="time" name="time" type="time" />
+                </div>
+              </div>
+
+              <div>
+                <label for="message">Project / Notes</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your project or any special requests."
+                ></textarea>
+              </div>
+
+              <!-- ✅ NEW: Terms & Conditions checkbox -->
+              <div class="terms-row-inline">
+                <input
+                  type="checkbox"
+                  name="agree_terms"
+                  id="agree_terms"
+                  required
+                />
+                <label for="agree_terms" class="terms-label-inline">
+                  I have read and agree to the
+                  <a href="how-it-works.html#rental-terms" target="_self">Terms &amp; Conditions</a>.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                📩 Send Booking Request
+              </button>
+            </form>
+
+        </div>
+
+        <aside class="contact-info">
+          <h2>Direct Contact</h2>
+          <p><strong>Phone / Text:</strong> <a href="tel:7049742879">(704) 974-2879</a></p>
+          <p><strong>Email:</strong> <a href="mailto:tyler@homefixrentals.com">tyler@homefixrentals.com</a></p>
+          <p><strong>Location:</strong> Bessemer City, NC</p>
+          <p>
+            Pickup address will be shared once your booking is confirmed, to keep our location and equipment secure.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> HomeFix Rentals. All rights reserved.</p>
+      <p>Bessemer City, NC · Call/Text: <a href="tel:7049742879">(704) 974-2879</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Import tools from Tools page cart into booking form
+    (function () {
+      const CART_KEY = 'hfr_cart';
+
+      function loadCart() {
+        try {
+          const raw = localStorage.getItem(CART_KEY);
+          return raw ? JSON.parse(raw) : [];
+        } catch (e) {
+          return [];
+        }
+      }
+
+      const items = loadCart();
+      if (!items.length) return;
+
+      const form = document.querySelector('.booking-form');
+      if (!form) return;
+
+      const messageField = document.getElementById('message');
+      const toolSelect = document.getElementById('tool');
+
+      // Build summary text
+      const summaryLines = items.map((name, i) => (i + 1) + '. ' + name);
+      const summaryText = 'Tools selected on the Tools page:\n' + summaryLines.join('\n');
+
+      if (messageField) {
+        const existing = messageField.value.trim();
+        messageField.value = existing ? (existing + '\n\n' + summaryText) : summaryText;
+      }
+
+      // Set tool select to "Multiple tools (see notes)" so it's clear
+      if (toolSelect) {
+        const valueText = 'Multiple tools (see notes)';
+        let option = Array.from(toolSelect.options).find(o => o.value === valueText);
+
+        if (!option) {
+          option = new Option(valueText, valueText);
+          // Insert after the placeholder option
+          toolSelect.add(option, 1);
+        }
+
+        toolSelect.value = valueText;
+      }
+
+      // Little notice above the form fields
+      const notice = document.createElement('div');
+      notice.className = 'alert-soft';
+      notice.innerHTML =
+        '<strong>Good news:</strong> We imported ' +
+        items.length +
+        ' tool(s) you selected on the Tools page into this request.';
+      const firstField = form.querySelector('div');
+      form.insertBefore(notice, firstField ? firstField.nextSibling : form.firstChild);
+
+      // Clear cart after successful submit so it doesn’t linger forever
+      form.addEventListener('submit', function () {
+        try {
+          localStorage.removeItem(CART_KEY);
+        } catch (e) {}
+      });
+    })();
+  </script>
+
+  <script>
+  (function () {
+    const bookingForm = document.querySelector('.booking-form');
+    const agreeBox = document.getElementById('agree_terms');
+
+    if (bookingForm && agreeBox) {
+      bookingForm.addEventListener('submit', function (e) {
+        if (!agreeBox.checked) {
+          e.preventDefault();
+          alert('Please agree to the Terms & Conditions before submitting your booking.');
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
