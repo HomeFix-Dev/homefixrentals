@@ -1,179 +1,205 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta name="theme-color" content="#f28c28">
-  <title>Contact Us – HomeFix Rentals</title>
-
-  <meta name="description" content="Contact HomeFix Rentals to book tools and equipment in Bessemer City, NC. Call, text, or submit an online booking request." />
-  <link rel="stylesheet" href="./css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
+<meta content="#f28c28" name="theme-color"/>
+<title>Contact Us – HomeFix Rentals</title>
+<meta content="Contact HomeFix Rentals to book tools and equipment in Bessemer City, NC. Call, text, or submit an online booking request." name="description"/>
+<link href="./css/style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="images/logo.png" alt="HomeFix Rentals logo" class="logo-img" />
-        <span class="site-name">HomeFix Rentals</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="tools.html">Tools</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <h1>Contact & Booking</h1>
-      <p>Use the form below to request a booking, or reach out directly by call or text.</p>
-
-      <div class="contact-layout">
-        <div>
-          <h2>Booking Request Form</h2>
-
-            <form action="https://formspree.io/f/mblvkbwk" method="POST" class="booking-form">
-              <!-- Formspree config -->
-              <input type="hidden" name="_subject" value="New Booking Request from HomeFix Rentals" />
-              <input type="text" name="_gotcha" style="display:none" />
-
-              <div class="alert-soft">
-                <strong>Heads up:</strong> This form sends a booking request only. We’ll confirm
+<header class="site-header">
+<div class="header-inner">
+<a class="logo-link" href="index.html">
+<img alt="HomeFix Rentals logo" class="logo-img" src="images/logo.png"/>
+<span class="site-name">HomeFix Rentals</span>
+</a>
+<button aria-label="Toggle navigation" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+<nav class="main-nav"><a href="index.html">Home</a><a href="tools.html">Tools</a><a href="how-it-works.html">How It Works</a><a class="active" href="contact.html">Contact</a></nav>
+</div>
+</header>
+<main>
+<section>
+<h1>Contact &amp; Booking</h1>
+<p>Use the form below to request a booking, or reach out directly by call or text.</p>
+<div class="contact-layout">
+<div>
+<h2>Booking Request Form</h2>
+<form action="https://formspree.io/f/mblvkbwk" class="booking-form" method="POST">
+<!-- Formspree config -->
+<input name="_subject" type="hidden" value="New Booking Request from HomeFix Rentals"/>
+<input name="_gotcha" style="display:none" type="text"/>
+<div class="alert-soft">
+<strong>Heads up:</strong> This form sends a booking request only. We’ll confirm
                 tool availability, deposit amount, and pickup address before you pay anything.
               </div>
-
-              <div>
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your full name" required />
-              </div>
-
-              <div>
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" placeholder="Best number to reach you" required />
-              </div>
-
-              <div>
-                <label for="email">Email (optional)</label>
-                <input id="email" name="email" type="email" placeholder="you@email.com" />
-              </div>
-
-              <div>
-                <label for="tool">Tool Needed</label>
-                <select id="tool" name="tool" required>
-                  <option value="">Select a tool…</option>
-
-                  <!-- Cutting & Woodworking -->
-                  <option>60V 12" Sliding Miter Saw</option>
-                  <option>FLEXVOLT 60V MAX 8-1/4" Table Saw</option>
-                  <option>V20 RP 7-1/4" Circular Saw</option>
-                  <option>7" Wet Tile Saw</option>
-                  <option>M18 HACKZALL Reciprocating Saw</option>
-                  <option>M18 6-1/2" Circular Saw</option>
-                  <option>M18 Oscillating Multi-Tool</option>
-
-                  <!-- Outdoor & Yard -->
-                  <option>Gas Chainsaw (18" Bar)</option>
-                  <option>M18 Compact Blower</option>
-
-                  <!-- Cleaning -->
-                  <option>DEWALT 3400 PSI Gas Pressure Washer</option>
-                  <option>16 Gallon Wet/Dry Shop Vac</option>
-
-                  <!-- Fastening & Air -->
-                  <option>6 Gal. 150 PSI Air Compressor (w/ Hose)</option>
-                  <option>18GA Brad Nailer (Combo)</option>
-                  <option>16GA Finish Nailer (Combo)</option>
-                  <option>18GA Finish Stapler (Combo)</option>
-                  <option>3-1/2" 21° Framing Nailer</option>
-
-                  <!-- Cordless Power Tools -->
-                  <option>M18 Brushless Grinder</option>
-                  <option>XR 20V Max Brushless Jigsaw</option>
-                  <option>M18 Drill/Driver</option>
-                  <option>M18 1/4" Impact Driver</option>
-                  <option>M18 High Torque Impact Wrench</option>
-
-                  <!-- Bundles -->
-                  <option>Trim & Finish Bundle</option>
-                  <option>Remodel Cutting Bundle</option>
-                  <option>Outdoor Cleanup Bundle</option>
-                  <option>Drill & Driver Bundle</option>
-
-                  <!-- Catch-all -->
-                  <option>Other (describe in notes)</option>
-                </select>
-              </div>
-
-              <div class="form-row-two">
-                <div>
-                  <label for="date">Preferred Date</label>
-                  <input id="date" name="date" type="date" required />
-                </div>
-                <div>
-                  <label for="time">Preferred Pickup Time</label>
-                  <input id="time" name="time" type="time" />
-                </div>
-              </div>
-
-              <div>
-                <label for="message">Project / Notes</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell us about your project or any special requests."
-                ></textarea>
-              </div>
-
-              <!-- ✅ NEW: Terms & Conditions checkbox -->
-              <div class="terms-row-inline">
-                <input
-                  type="checkbox"
-                  name="agree_terms"
-                  id="agree_terms"
-                  required
-                />
-                <label for="agree_terms" class="terms-label-inline">
+<div>
+<label for="name">Name</label>
+<input id="name" name="name" placeholder="Your full name" required="" type="text"/>
+</div>
+<div>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" placeholder="Best number to reach you" required="" type="tel"/>
+</div>
+<div>
+<label for="email">Email (optional)</label>
+<input id="email" name="email" placeholder="you@email.com" type="email"/>
+</div>
+<div>
+<label for="tool">Tool Needed</label>
+<select id="tool" name="tool" required="">
+<option value="">Select a tool…</option>
+<!-- Cutting & Woodworking -->
+<option>60V 12" Sliding Miter Saw</option>
+<option>FLEXVOLT 60V MAX 8-1/4" Table Saw</option>
+<option>V20 RP 7-1/4" Circular Saw</option>
+<option>7" Wet Tile Saw</option>
+<option>M18 HACKZALL Reciprocating Saw</option>
+<option>M18 6-1/2" Circular Saw</option>
+<option>M18 Oscillating Multi-Tool</option>
+<!-- Outdoor & Yard -->
+<option>Gas Chainsaw (18" Bar)</option>
+<option>M18 Compact Blower</option>
+<!-- Cleaning -->
+<option>DEWALT 3400 PSI Gas Pressure Washer</option>
+<option>16 Gallon Wet/Dry Shop Vac</option>
+<!-- Fastening & Air -->
+<option>6 Gal. 150 PSI Air Compressor (w/ Hose)</option>
+<option>18GA Brad Nailer (Combo)</option>
+<option>16GA Finish Nailer (Combo)</option>
+<option>18GA Finish Stapler (Combo)</option>
+<option>3-1/2" 21° Framing Nailer</option>
+<!-- Cordless Power Tools -->
+<option>M18 Brushless Grinder</option>
+<option>XR 20V Max Brushless Jigsaw</option>
+<option>M18 Drill/Driver</option>
+<option>M18 1/4" Impact Driver</option>
+<option>M18 High Torque Impact Wrench</option>
+<!-- Bundles -->
+<option>Trim &amp; Finish Bundle</option>
+<option>Remodel Cutting Bundle</option>
+<option>Outdoor Cleanup Bundle</option>
+<option>Drill &amp; Driver Bundle</option>
+<!-- Catch-all -->
+<option>Other (describe in notes)</option>
+</select>
+</div>
+<div class="form-row-two">
+<div>
+<label for="date">Preferred Date</label>
+<input id="date" name="date" required="" type="date"/>
+</div>
+<div>
+<label for="time">Preferred Pickup Time</label>
+<input id="time" name="time" type="time"/>
+</div>
+</div>
+<div>
+<label for="message">Project / Notes</label>
+<textarea id="message" name="message" placeholder="Tell us about your project or any special requests."></textarea>
+</div>
+<h3>Optional Service Plans</h3>
+<p style="font-size:0.85rem; color:#4b5563; margin-top:0; margin-bottom:0.5rem;">
+                Select any add-ons you’re interested in. Final pricing will be confirmed when we
+                review your booking.
+            </p>
+<div class="form-row-two">
+<div>
+<label>
+<input name="plan_fuel_cleaning" type="checkbox" value="Fuel + Cleaning Plan ($15)"/>
+                    Fuel + Cleaning Plan – $15
+                  </label>
+<p style="font-size:0.8rem; color:#6b7280; margin:0.1rem 0 0.5rem;">
+                    We handle gas refill and standard cleaning on applicable tools (approx. $15 per
+                    rental for most gas tools).
+                  </p>
+</div>
+<div>
+<label>
+<input name="plan_damage_protection" type="checkbox" value="Damage Protection Plan ($12)"/>
+                    Damage Protection – $12
+                  </label>
+<p style="font-size:0.8rem; color:#6b7280; margin:0.1rem 0 0.5rem;">
+                    Helps cover accidental minor damage from normal use (limits apply).
+                  </p>
+</div>
+</div>
+<div class="form-row-two">
+<div>
+<label>
+<input name="plan_extended_rental" type="checkbox" value="Extended Rental Plan ($15)"/>
+                    Extended Rental – $15
+                  </label>
+<p style="font-size:0.8rem; color:#6b7280; margin:0.1rem 0 0.5rem;">
+                    Add extra time (late return same day or overnight) so you’re not rushed.
+                  </p>
+</div>
+<div>
+<label>
+<input name="plan_weekend_saver" type="checkbox" value="Weekend Saver Plan (~1.5x daily rate)"/>
+                    Weekend Saver – ~1.5× daily rate
+                  </label>
+<p style="font-size:0.8rem; color:#6b7280; margin:0.1rem 0 0.5rem;">
+                    Special flat weekend pricing (for example, a $55/day tool is about $85 for the
+                    weekend).
+                  </p>
+</div>
+</div>
+<div class="form-row-two">
+<div>
+<label>
+<input name="plan_return_anytime" type="checkbox" value="Return Anytime Plan ($8)"/>
+                    Return Anytime – $8
+                  </label>
+<p style="font-size:0.8rem; color:#6b7280; margin:0.1rem 0 0.5rem;">
+                    Ask about flexible or after-hours return using our designated drop-off area.
+                  </p>
+</div>
+<div>
+<label>
+<input name="plan_delivery" type="checkbox" value="Local Delivery &amp; Pickup (from $25)"/>
+                    Local Delivery &amp; Pickup – from $25
+                  </label>
+<p style="font-size:0.8rem; color:#6b7280; margin:0.1rem 0 0.5rem;">
+                    Request local delivery and/or pickup (typically $25 one way or $40 round-trip
+                    within about 10 miles, for eligible tools).
+                  </p>
+</div>
+</div>
+<!-- ✅ NEW: Terms & Conditions checkbox -->
+<div class="terms-row-inline">
+<input id="agree_terms" name="agree_terms" required="" type="checkbox"/>
+<label class="terms-label-inline" for="agree_terms">
                   I have read and agree to the
                   <a href="how-it-works.html#rental-terms" target="_self">Terms &amp; Conditions</a>.
                 </label>
-              </div>
-
-              <button type="submit" class="btn btn-primary">
+</div>
+<button class="btn btn-primary" type="submit">
                 📩 Send Booking Request
               </button>
-            </form>
-
-        </div>
-
-        <aside class="contact-info">
-          <h2>Direct Contact</h2>
-          <p><strong>Phone / Text:</strong> <a href="tel:‪7046298466‬">‪(704) 629-8466‬</a></p>
-          <p><strong>Email:</strong> <a href="mailto:tyler@homefixrentals.com">tyler@homefixrentals.com</a></p>
-          <p><strong>Location:</strong> Bessemer City, NC</p>
-          <p>
+</form>
+</div>
+<aside class="contact-info">
+<h2>Direct Contact</h2>
+<p><strong>Phone / Text:</strong> <a href="tel:7046298466">(704) 629-8466</a></p>
+<p><strong>Email:</strong> <a href="mailto:tyler@homefixrentals.com">tyler@homefixrentals.com</a></p>
+<p><strong>Location:</strong> Bessemer City, NC</p>
+<p>
             Pickup address will be shared once your booking is confirmed, to keep our location and equipment secure.
           </p>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© <span id="year"></span> HomeFix Rentals. All rights reserved.</p>
-      <p>Bessemer City, NC · Call/Text: <a href="tel:‪7046298466‬">‪(704) 629-8466‬</a></p>
-    </div>
-  </footer>
-
-  <script>
+</aside>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner"><p>© <span id="year"></span> HomeFix Rentals. All rights reserved.</p><p>Bessemer City, NC · Call/Text: <a href="tel:7046298466">(704) 629-8466</a> · <a href="faq.html">FAQ</a></p></div>
+</footer>
+<script>
     // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -240,8 +266,7 @@
       });
     })();
   </script>
-
-  <script>
+<script>
   (function () {
     const bookingForm = document.querySelector('.booking-form');
     const agreeBox = document.getElementById('agree_terms');
@@ -256,7 +281,5 @@
     }
   })();
 </script>
-
 </body>
 </html>
-
