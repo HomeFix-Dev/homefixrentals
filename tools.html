@@ -1,609 +1,530 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <meta name="theme-color" content="#f28c28">
-  <title>Tools & Equipment – HomeFix Rentals</title>
-
-  <meta name="description" content="Browse tool and equipment rentals from HomeFix Rentals in Bessemer City, NC. Select the tools you need and send a booking request online." />
-  <link rel="stylesheet" href="./css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
+<meta content="#f28c28" name="theme-color"/>
+<title>Tools &amp; Equipment – HomeFix Rentals</title>
+<meta content="Browse tool and equipment rentals from HomeFix Rentals in Bessemer City, NC. Select the tools you need and send a booking request online." name="description"/>
+<link href="./css/style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="images/logo.png" alt="HomeFix Rentals logo" class="logo-img" />
-        <span class="site-name">HomeFix Rentals</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="tools.html" class="active">Tools</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- Page intro -->
-    <section class="page-header">
-      <h1>Tool & Equipment Rentals</h1>
-      <p>
+<header class="site-header">
+<div class="header-inner">
+<a class="logo-link" href="index.html">
+<img alt="HomeFix Rentals logo" class="logo-img" src="images/logo.png"/>
+<span class="site-name">HomeFix Rentals</span>
+</a>
+<button aria-label="Toggle navigation" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+<nav class="main-nav"><a href="index.html">Home</a><a class="active" href="tools.html">Tools</a><a href="how-it-works.html">How It Works</a><a href="contact.html">Contact</a></nav>
+</div>
+</header>
+<main>
+<!-- Page intro -->
+<section class="page-header">
+<div class="tools-intro">
+<h1>Tool &amp; Equipment Rentals</h1>
+<p>
         Pick the tools you need for your project, add them to your booking list, then send us a request on the Contact page.
       </p>
-      <p class="tool-note">
+<p class="tool-note">
         Pricing shown as <strong>hourly · daily · weekly</strong>. Minimum charges may apply.
       </p>
-    </section>
-
-    <!-- Category tiles -->
-    <section class="category-section">
-      <h2>Browse by Category</h2>
-
-      <div class="category-grid">
-
-        <!-- Concrete & Masonry -->
-        <a href="#concrete" class="card category-card">
-          <img src="images/categories/concrete-and-masonry-tools.jpg" alt="Concrete and masonry tools" class="category-img">
-          <span class="badge">Concrete & Masonry</span>
-          <h3>Slabs, patios & footings</h3>
-          <p>Mixers, drills, and future concrete tools.</p>
-        </a>
-
-        <!-- Cutting & Woodworking -->
-        <a href="#cutting" class="card category-card">
-          <img src="images/categories/cutting-&-woodworking-tools.jpg" alt="Cutting and woodworking tools" class="category-img">
-          <span class="badge">Cutting & Woodworking</span>
-          <h3>Saws & carpentry</h3>
-          <p>Table saws, miter saws, jigsaws and more.</p>
-        </a>
-
-        <!-- Outdoor & Yard -->
-        <a href="#outdoor" class="card category-card">
-          <img src="images/categories/outdoor-&-yard-tools.jpg" alt="Outdoor and yard tools" class="category-img">
-          <span class="badge">Outdoor & Yard</span>
-          <h3>Cleanup & landscaping</h3>
-          <p>Chainsaws, blowers and outdoor helpers.</p>
-        </a>
-
-        <!-- Cleaning -->
-        <a href="#cleaning" class="card category-card">
-          <img src="images/categories/cleaning-tools.jpg" alt="Cleaning tools and pressure washers" class="category-img">
-          <span class="badge">Cleaning</span>
-          <h3>Pressure washers & vacs</h3>
-          <p>Deep-clean your driveway, deck, or interior.</p>
-        </a>
-
-        <!-- Fastening & Air -->
-        <a href="#fastening" class="card category-card">
-          <img src="images/categories/fastening-&-air-tools.jpeg" alt="Nailers and air tools" class="category-img">
-          <span class="badge">Fastening & Air</span>
-          <h3>Nailers & compressors</h3>
-          <p>Air compressors and nail gun kits.</p>
-        </a>
-
-        <!-- Bundles -->
-        <a href="#bundles" class="card category-card">
-          <img src="images/categories/other-tools.jpg" alt="Tool bundles" class="category-img">
-          <span class="badge">Bundles</span>
-          <h3>Tool bundles</h3>
-          <p>Pre-made bundles that save time and money.</p>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- Cart bar -->
-    <section class="cart-section">
-      <div class="cart-bar" data-cart>
-        <div class="cart-items">
-          <h3>Your booking list</h3>
-          <p class="cart-empty">
+<p class="tool-note tool-addons">
+<strong>Service Plans Available:</strong> Fuel + Cleaning (~$15), Damage Protection (~$12),
+        Extended Rental (~$15), Weekend Saver (~1.5× daily rate), Return Anytime (~$8), and Local
+        Delivery (from $25) on select tools.
+      </p>
+</div>
+</section>
+<!-- Category tiles -->
+<section class="category-section">
+<h2>Browse by Category</h2>
+<div class="category-grid">
+<!-- Concrete & Masonry -->
+<a class="card category-card" href="#concrete">
+<img alt="Concrete and masonry tools" class="category-img" src="images/categories/concrete-and-masonry-tools.jpg"/>
+<span class="badge">Concrete &amp; Masonry</span>
+<h3>Slabs, patios &amp; footings</h3>
+<p>Mixers, drills, and future concrete tools.</p>
+</a>
+<!-- Cutting & Woodworking -->
+<a class="card category-card" href="#cutting">
+<img alt="Cutting and woodworking tools" class="category-img" src="images/categories/cutting-&amp;-woodworking-tools.jpg"/>
+<span class="badge">Cutting &amp; Woodworking</span>
+<h3>Saws &amp; carpentry</h3>
+<p>Table saws, miter saws, jigsaws and more.</p>
+</a>
+<!-- Outdoor & Yard -->
+<a class="card category-card" href="#outdoor">
+<img alt="Outdoor and yard tools" class="category-img" src="images/categories/outdoor-&amp;-yard-tools.jpg"/>
+<span class="badge">Outdoor &amp; Yard</span>
+<h3>Cleanup &amp; landscaping</h3>
+<p>Chainsaws, blowers and outdoor helpers.</p>
+</a>
+<!-- Cleaning -->
+<a class="card category-card" href="#cleaning">
+<img alt="Cleaning tools and pressure washers" class="category-img" src="images/categories/cleaning-tools.jpg"/>
+<span class="badge">Cleaning</span>
+<h3>Pressure washers &amp; vacs</h3>
+<p>Deep-clean your driveway, deck, or interior.</p>
+</a>
+<!-- Fastening & Air -->
+<a class="card category-card" href="#fastening">
+<img alt="Nailers and air tools" class="category-img" src="images/categories/fastening-&amp;-air-tools.jpeg"/>
+<span class="badge">Fastening &amp; Air</span>
+<h3>Nailers &amp; compressors</h3>
+<p>Air compressors and nail gun kits.</p>
+</a>
+<!-- Bundles -->
+<a class="card category-card" href="#bundles">
+<img alt="Tool bundles" class="category-img" src="images/categories/other-tools.jpg"/>
+<span class="badge">Bundles</span>
+<h3>Tool bundles</h3>
+<p>Pre-made bundles that save time and money.</p>
+</a>
+</div>
+</section>
+<!-- Cart bar -->
+<section class="cart-section">
+<div class="cart-bar" data-cart="">
+<div class="cart-items">
+<h3>Your booking list</h3>
+<p class="cart-empty">
             No tools selected yet. Click “Add to Booking” on any tool below.
           </p>
-          <div class="cart-list"></div>
-        </div>
-
-        <div class="cart-actions">
-          <p class="cart-count"><strong>0</strong> tools selected</p>
-          <a href="contact.html" class="btn btn-primary cart-go">
+<div class="cart-list"></div>
+</div>
+<div class="cart-actions">
+<p class="cart-count"><strong>0</strong> tools selected</p>
+<a class="btn btn-primary cart-go" href="contact.html">
             📩 Go to Booking Form
           </a>
-          <button type="button" class="btn btn-outline cart-clear">
+<button class="btn btn-outline cart-clear" type="button">
             Clear list
           </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONCRETE -->
-    <section id="concrete">
-      <h2>Concrete, Masonry & Mixing</h2>
-
-      <div class="card tool-card" style="text-align:center; padding:2rem 1.5rem;">
-        <h3>🧱 Concrete tools coming soon</h3>
-        <p class="tool-desc">
+</div>
+</div>
+</section>
+<!-- CONCRETE -->
+<section id="concrete">
+<h2>Concrete, Masonry &amp; Mixing</h2>
+<div class="card tool-card" style="text-align:center; padding:2rem 1.5rem;">
+<h3>🧱 Concrete tools coming soon</h3>
+<p class="tool-desc">
           We’re updating this section with mixers, drills, and more concrete tools.
           Check back soon or send a booking request if you need something specific.
         </p>
-        <p class="tool-price">
-          <strong>Coming soon</strong>
-        </p>
-        <p class="tool-note">
+<p class="tool-price">
+<strong>Coming soon</strong>
+</p>
+<p class="tool-note">
           You can still use the booking form to tell us what you’re planning and we’ll see if we can help.
         </p>
-      </div>
-    </section>
-
-    <!-- CUTTING / WOODWORKING (all SAW tools from inventory) -->
-    <section id="cutting">
-      <h2>Cutting & Woodworking</h2>
-      <div class="tool-grid">
-
-        <!-- 60V 12" Sliding Miter Saw -->
-        <div class="card tool-card" data-tool-name='60V 12&quot; Sliding Miter Saw'>
-          <img src="images/tools/dewalt-miter-saw.png"
-               alt="DeWalt 60V 12 inch sliding miter saw"
-               class="tool-photo">
-          <h3>60V 12&quot; Sliding Miter Saw</h3>
-          <p class="tool-desc">
+</div>
+</section>
+<!-- CUTTING / WOODWORKING (all SAW tools from inventory) -->
+<section id="cutting">
+<h2>Cutting &amp; Woodworking</h2>
+<div class="tool-grid">
+<!-- 60V 12" Sliding Miter Saw -->
+<div class="card tool-card" data-tool-name='60V 12" Sliding Miter Saw'>
+<img alt="DeWalt 60V 12 inch sliding miter saw" class="tool-photo" src="images/tools/dewalt-miter-saw.png"/>
+<h3>60V 12" Sliding Miter Saw</h3>
+<p class="tool-desc">
             Pro-grade sliding compound miter saw for framing, trim, decks and interior work.
           </p>
-          <p class="tool-price">
-            <strong>$16 / hr</strong> · $40 / day · $120 / week
+<p class="tool-price">
+<strong>$16 / hr</strong> · $40 / day · $120 / week
           </p>
-          <p class="tool-note">Battery FLEXVOLT 60V platform.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- FLEXVOLT 60V MAX 8-1/4" Table Saw -->
-        <div class="card tool-card" data-tool-name='FLEXVOLT 60V MAX 8-1/4&quot; Table Saw'>
-          <img src="images/tools/dewalt-table-saw.jpg"
-               alt="DeWalt FLEXVOLT 60V table saw"
-               class="tool-photo">
-          <h3>FLEXVOLT 60V MAX 8-1/4&quot; Table Saw</h3>
-          <p class="tool-desc">
+<p class="tool-note">Battery FLEXVOLT 60V platform.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- FLEXVOLT 60V MAX 8-1/4" Table Saw -->
+<div class="card tool-card" data-tool-name='FLEXVOLT 60V MAX 8-1/4" Table Saw'>
+<img alt="DeWalt FLEXVOLT 60V table saw" class="tool-photo" src="images/tools/dewalt-table-saw.jpg"/>
+<h3>FLEXVOLT 60V MAX 8-1/4" Table Saw</h3>
+<p class="tool-desc">
             Portable jobsite table saw for ripping sheet goods, trim, and general carpentry.
           </p>
-          <p class="tool-price">
-            <strong>$16 / hr</strong> · $40 / day · $120 / week
+<p class="tool-price">
+<strong>$16 / hr</strong> · $40 / day · $120 / week
           </p>
-          <p class="tool-note">Great with the miter saw for full-room remodels.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- V20 RP 7-1/4" Circular Saw -->
-        <div class="card tool-card" data-tool-name='V20 RP 7-1/4&quot; Circular Saw'>
-          <img src="images/tools/craftsman-circular-saw.jpg"
-               alt="Craftsman V20 7-1/4 inch circular saw"
-               class="tool-photo">
-          <h3>V20 RP 7-1/4&quot; Circular Saw</h3>
-          <p class="tool-desc">
+<p class="tool-note">Great with the miter saw for full-room remodels.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- V20 RP 7-1/4" Circular Saw -->
+<div class="card tool-card" data-tool-name='V20 RP 7-1/4" Circular Saw'>
+<img alt="Craftsman V20 7-1/4 inch circular saw" class="tool-photo" src="images/tools/craftsman-circular-saw.jpg"/>
+<h3>V20 RP 7-1/4" Circular Saw</h3>
+<p class="tool-desc">
             General-purpose circular saw for framing lumber, OSB, and plywood cuts.
           </p>
-          <p class="tool-price">
-            <strong>$10 / hr</strong> · $30 / day · $60 / week
+<p class="tool-price">
+<strong>$10 / hr</strong> · $30 / day · $60 / week
           </p>
-          <p class="tool-note">Ideal for breaking down sheets and quick cuts on site.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- 7" Wet Tile Saw -->
-        <div class="card tool-card" data-tool-name='7&quot; Wet Tile Saw'>
-          <img src="images/tools/SKIL-tile-saw.jpg"
-               alt="7 inch wet tile saw"
-               class="tool-photo">
-          <h3>7&quot; Wet Tile Saw</h3>
-          <p class="tool-desc">
+<p class="tool-note">Ideal for breaking down sheets and quick cuts on site.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- 7" Wet Tile Saw -->
+<div class="card tool-card" data-tool-name='7" Wet Tile Saw'>
+<img alt="7 inch wet tile saw" class="tool-photo" src="images/tools/SKIL-tile-saw.jpg"/>
+<h3>7" Wet Tile Saw</h3>
+<p class="tool-desc">
             For cutting ceramic and porcelain tile for backsplashes, showers, and floors.
           </p>
-          <p class="tool-price">
-            <strong>$10 / hr</strong> · $20 / day · $60 / week
+<p class="tool-price">
+<strong>$10 / hr</strong> · $20 / day · $60 / week
           </p>
-          <p class="tool-note">Use with a proper GFCI outlet and clean pan after use.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 Cordless Hackzall -->
-        <div class="card tool-card" data-tool-name='M18 HACKZALL Reciprocating Saw'>
-          <img src="images/tools/milwaukee-M18-hacksaw.jpg"
-               alt="Milwaukee M18 Hackzall reciprocating saw"
-               class="tool-photo">
-          <h3>M18 HACKZALL Reciprocating Saw</h3>
-          <p class="tool-desc">
+<p class="tool-note">Use with a proper GFCI outlet and clean pan after use.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 Cordless Hackzall -->
+<div class="card tool-card" data-tool-name="M18 HACKZALL Reciprocating Saw">
+<img alt="Milwaukee M18 Hackzall reciprocating saw" class="tool-photo" src="images/tools/milwaukee-M18-hacksaw.jpg"/>
+<h3>M18 HACKZALL Reciprocating Saw</h3>
+<p class="tool-desc">
             One-handed reciprocating saw for tight spaces, demo work, and quick cuts.
           </p>
-          <p class="tool-price">
-            <strong>$12 / hr</strong> · $30 / day · $90 / week
+<p class="tool-price">
+<strong>$12 / hr</strong> · $30 / day · $90 / week
           </p>
-          <p class="tool-note">Bring your own blades or ask about adding blade packs.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 6-1/2" Circular Saw -->
-        <div class="card tool-card" data-tool-name='M18 6-1/2&quot; Circular Saw'>
-          <img src="images/tools/milwaukee-circular-saw.jpg"
-               alt="Milwaukee M18 6-1/2 inch circular saw"
-               class="tool-photo">
-          <h3>M18 6-1/2&quot; Circular Saw</h3>
-          <p class="tool-desc">
+<p class="tool-note">Bring your own blades or ask about adding blade packs.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 6-1/2" Circular Saw -->
+<div class="card tool-card" data-tool-name='M18 6-1/2" Circular Saw'>
+<img alt="Milwaukee M18 6-1/2 inch circular saw" class="tool-photo" src="images/tools/milwaukee-circular-saw.jpg"/>
+<h3>M18 6-1/2" Circular Saw</h3>
+<p class="tool-desc">
             Compact cordless circular saw for smaller cuts, trim, and punch-list work.
           </p>
-          <p class="tool-price">
-            <strong>$12 / hr</strong> · $30 / day · $90 / week
+<p class="tool-price">
+<strong>$12 / hr</strong> · $30 / day · $90 / week
           </p>
-          <p class="tool-note">Runs on the same M18 batteries as many of our power tools.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 Multi Tool -->
-        <div class="card tool-card" data-tool-name='M18 Multi Tool'>
-          <img src="images/tools/milwaukee-M18-multi-tool.jpg"
-               alt="Milwaukee M18 oscillating multi-tool"
-               class="tool-photo">
-          <h3>M18 Oscillating Multi-Tool</h3>
-          <p class="tool-desc">
+<p class="tool-note">Runs on the same M18 batteries as many of our power tools.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 Multi Tool -->
+<div class="card tool-card" data-tool-name="M18 Multi Tool">
+<img alt="Milwaukee M18 oscillating multi-tool" class="tool-photo" src="images/tools/milwaukee-M18-multi-tool.jpg"/>
+<h3>M18 Oscillating Multi-Tool</h3>
+<p class="tool-desc">
             Oscillating multi-tool for undercutting door jambs, detail sanding, and tight cuts.
           </p>
-          <p class="tool-price">
-            <strong>$6 / hr</strong> · $18 / day · $50 / week
+<p class="tool-price">
+<strong>$6 / hr</strong> · $18 / day · $50 / week
           </p>
-          <p class="tool-note">Ask about blades for wood, metal, or grout removal.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- OUTDOOR & YARD -->
-    <section id="outdoor">
-      <h2>Outdoor & Yard</h2>
-      <div class="tool-grid">
-
-        <!-- Gas Chainsaw (kept even though not in PDF) -->
-        <div class="card tool-card" data-tool-name="Gas Chainsaw (18&quot;)">
-          <img src="images/tools/chainsaw.png"
-               alt="Gas chainsaw"
-               class="tool-photo">
-          <h3>Gas Chainsaw (18&quot; Bar)</h3>
-          <p class="tool-desc">
+<p class="tool-note">Ask about blades for wood, metal, or grout removal.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+</div>
+</section>
+<!-- OUTDOOR & YARD -->
+<section id="outdoor">
+<h2>Outdoor &amp; Yard</h2>
+<div class="tool-grid">
+<!-- Gas Chainsaw (kept even though not in PDF) -->
+<div class="card tool-card" data-tool-name='Gas Chainsaw (18")'>
+<img alt="Gas chainsaw" class="tool-photo" src="images/tools/chainsaw.png"/>
+<h3>Gas Chainsaw (18" Bar)</h3>
+<p class="tool-desc">
             Ideal for trimming, limbing, and cutting small to medium trees and branches.
           </p>
-          <p class="tool-price">
-            <strong>$12 / hr</strong> · $30 / day · $90 / week
+<p class="tool-price">
+<strong>$12 / hr</strong> · $30 / day · $90 / week
           </p>
-          <p class="tool-note">
+<p class="tool-note">
             Renter supplies bar oil and fuel mix or add a fuel package to your booking.
           </p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 Compact Blower (from Cleaning category but great outdoors) -->
-        <div class="card tool-card" data-tool-name="M18 Compact Blower">
-          <img src="images/tools/milwaukee-M18-blower.jpg"
-               alt="Milwaukee M18 compact blower"
-               class="tool-photo">
-          <h3>M18 Compact Blower</h3>
-          <p class="tool-desc">
+<p class="tool-note tool-addons">
+            Service plans: Fuel + Cleaning, Damage Protection, Extended / Weekend time, Return Anytime.
+          </p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 Compact Blower (from Cleaning category but great outdoors) -->
+<div class="card tool-card" data-tool-name="M18 Compact Blower">
+<img alt="Milwaukee M18 compact blower" class="tool-photo" src="images/tools/milwaukee-M18-blower.jpg"/>
+<h3>M18 Compact Blower</h3>
+<p class="tool-desc">
             Cordless blower for clearing sawdust, leaves, and jobsite debris.
           </p>
-          <p class="tool-price">
-            <strong>$6 / hr</strong> · $18 / day · $50 / week
+<p class="tool-price">
+<strong>$6 / hr</strong> · $18 / day · $50 / week
           </p>
-          <p class="tool-note">Pairs well with the chainsaw or pressure washer for cleanup.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CLEANING -->
-    <section id="cleaning">
-      <h2>Cleaning & Surface Prep</h2>
-      <div class="tool-grid">
-
-        <!-- DEWALT 3400 PSI Pressure Washer -->
-        <div class="card tool-card" data-tool-name="DEWALT 3400 PSI Pressure Washer">
-          <img src="images/tools/dewalt-pressure-washer.jpg"
-               alt="DeWalt 3400 PSI gas pressure washer"
-               class="tool-photo">
-          <h3>DEWALT 3400 PSI Gas Pressure Washer</h3>
-          <p class="tool-desc">
+<p class="tool-note">Pairs well with the chainsaw or pressure washer for cleanup.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+</div>
+</section>
+<!-- CLEANING -->
+<section id="cleaning">
+<h2>Cleaning &amp; Surface Prep</h2>
+<div class="tool-grid">
+<!-- DEWALT 3400 PSI Pressure Washer -->
+<div class="card tool-card" data-tool-name="DEWALT 3400 PSI Pressure Washer">
+<img alt="DeWalt 3400 PSI gas pressure washer" class="tool-photo" src="images/tools/dewalt-pressure-washer.jpg"/>
+<h3>DEWALT 3400 PSI Gas Pressure Washer</h3>
+<p class="tool-desc">
             Heavy-duty cold water pressure washer for driveways, siding, decks, and more.
           </p>
-          <p class="tool-price">
-            <strong>$15 / hr</strong> · $55 / day · $150 / week
+<p class="tool-price">
+<strong>$15 / hr</strong> · $55 / day · $150 / week
           </p>
-          <p class="tool-note">Multiple nozzle tips included. Fuel not included in rental.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- 16 Gallon Wet/Dry Shop Vac -->
-        <div class="card tool-card" data-tool-name="16 Gallon Wet/Dry Shop Vac">
-          <img src="images/tools/ridgid-wet-dry-vac.jpg"
-               alt="16 gallon wet dry shop vac"
-               class="tool-photo">
-          <h3>16 Gallon Wet/Dry Shop Vac</h3>
-          <p class="tool-desc">
+<p class="tool-note">Multiple nozzle tips included. Fuel not included in rental.</p>
+<p class="tool-note tool-addons">
+            Service plans: Fuel + Cleaning, Damage Protection, Extended / Weekend time, Return Anytime, Delivery.
+          </p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- 16 Gallon Wet/Dry Shop Vac -->
+<div class="card tool-card" data-tool-name="16 Gallon Wet/Dry Shop Vac">
+<img alt="16 gallon wet dry shop vac" class="tool-photo" src="images/tools/ridgid-wet-dry-vac.jpg"/>
+<h3>16 Gallon Wet/Dry Shop Vac</h3>
+<p class="tool-desc">
             High-capacity shop vac for water cleanup, concrete dust, and remodeling debris.
           </p>
-          <p class="tool-price">
-            <strong>$8 / hr</strong> · $20 / day · $55 / week
+<p class="tool-price">
+<strong>$8 / hr</strong> · $20 / day · $55 / week
           </p>
-          <p class="tool-note">Includes hose and standard attachments. Bags/filters extra if needed.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FASTENING & AIR -->
-    <section id="fastening">
-      <h2>Fastening & Air Tools</h2>
-      <div class="tool-grid">
-
-        <!-- 6 Gal Air Compressor -->
-        <div class="card tool-card" data-tool-name="6 Gal. 150 PSI Air Compressor">
-          <img src="images/tools/ridgid-air-compressor.png"
-               alt="6 gallon 150 PSI air compressor"
-               class="tool-photo">
-          <h3>6 Gal. 150 PSI Air Compressor (w/ Hose)</h3>
-          <p class="tool-desc">
+<p class="tool-note">Includes hose and standard attachments. Bags/filters extra if needed.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+</div>
+</section>
+<!-- FASTENING & AIR -->
+<section id="fastening">
+<h2>Fastening &amp; Air Tools</h2>
+<div class="tool-grid">
+<!-- 6 Gal Air Compressor -->
+<div class="card tool-card" data-tool-name="6 Gal. 150 PSI Air Compressor">
+<img alt="6 gallon 150 PSI air compressor" class="tool-photo" src="images/tools/ridgid-air-compressor.png"/>
+<h3>6 Gal. 150 PSI Air Compressor (w/ Hose)</h3>
+<p class="tool-desc">
             Pancake compressor with 25 ft. hose, ideal for trim guns and light framing.
           </p>
-          <p class="tool-price">
-            <strong>$12 / hr</strong> · $35 / day · $100 / week
+<p class="tool-price">
+<strong>$12 / hr</strong> · $35 / day · $100 / week
           </p>
-          <p class="tool-note">Perfect base for our nailer and stapler combos.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- 18GA Brad Nailer -->
-        <div class="card tool-card" data-tool-name="18GA Brad Nailer (Combo)">
-          <img src="images/tools/ridgid-18G-brad-nailer.png"
-               alt="18 gauge brad nailer"
-               class="tool-photo">
-          <h3>18GA Brad Nailer (Combo)</h3>
-          <p class="tool-desc">
+<p class="tool-note">Perfect base for our nailer and stapler combos.</p>
+<p class="tool-note tool-addons">
+            Service plans: Damage Protection, Extended / Weekend time, Return Anytime. Delivery may be available.
+          </p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- 18GA Brad Nailer -->
+<div class="card tool-card" data-tool-name="18GA Brad Nailer (Combo)">
+<img alt="18 gauge brad nailer" class="tool-photo" src="images/tools/ridgid-18G-brad-nailer.png"/>
+<h3>18GA Brad Nailer (Combo)</h3>
+<p class="tool-desc">
             Great for trim, casing, and light woodworking projects.
           </p>
-          <p class="tool-price">
-            <strong>$10 / hr</strong> · $30 / day · $90 / week
+<p class="tool-price">
+<strong>$10 / hr</strong> · $30 / day · $90 / week
           </p>
-          <p class="tool-note">Requires compressor. Pair it with our 6 Gal. air compressor.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- 16GA Finish Nailer -->
-        <div class="card tool-card" data-tool-name="16GA Finish Nailer (Combo)">
-          <img src="images/tools/ridgid-16G-finishing-nailer.png"
-               alt="16 gauge finish nailer"
-               class="tool-photo">
-          <h3>16GA Finish Nailer (Combo)</h3>
-          <p class="tool-desc">
+<p class="tool-note">Requires compressor. Pair it with our 6 Gal. air compressor.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- 16GA Finish Nailer -->
+<div class="card tool-card" data-tool-name="16GA Finish Nailer (Combo)">
+<img alt="16 gauge finish nailer" class="tool-photo" src="images/tools/ridgid-16G-finishing-nailer.png"/>
+<h3>16GA Finish Nailer (Combo)</h3>
+<p class="tool-desc">
             Heavier-duty finish nailer for door jambs, larger trim, and built-ins.
           </p>
-          <p class="tool-price">
-            <strong>$10 / hr</strong> · $30 / day · $90 / week
+<p class="tool-price">
+<strong>$10 / hr</strong> · $30 / day · $90 / week
           </p>
-          <p class="tool-note">Use with the compressor and proper-rated hose.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- 18GA Finish Stapler -->
-        <div class="card tool-card" data-tool-name="18GA Finish Stapler (Combo)">
-          <img src="images/tools/ridgid-stapler.png"
-               alt="18 gauge finish stapler"
-               class="tool-photo">
-          <h3>18GA Finish Stapler (Combo)</h3>
-          <p class="tool-desc">
+<p class="tool-note">Use with the compressor and proper-rated hose.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- 18GA Finish Stapler -->
+<div class="card tool-card" data-tool-name="18GA Finish Stapler (Combo)">
+<img alt="18 gauge finish stapler" class="tool-photo" src="images/tools/ridgid-stapler.png"/>
+<h3>18GA Finish Stapler (Combo)</h3>
+<p class="tool-desc">
             Ideal for underlayment, backs, and light fastening where staples are preferred.
           </p>
-          <p class="tool-price">
-            <strong>$10 / hr</strong> · $30 / day · $90 / week
+<p class="tool-price">
+<strong>$10 / hr</strong> · $30 / day · $90 / week
           </p>
-          <p class="tool-note">Common for cabinet backs, paneling, and light assembly.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- 21° Framing Nailer -->
-        <div class="card tool-card" data-tool-name='3-1/2&quot; 21° Framing Nailer'>
-          <img src="images/tools/metabo_hpt_nailer.jpg"
-               alt="21 degree framing nailer"
-               class="tool-photo">
-          <h3>3-1/2&quot; 21° Framing Nailer</h3>
-          <p class="tool-desc">
+<p class="tool-note">Common for cabinet backs, paneling, and light assembly.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- 21° Framing Nailer -->
+<div class="card tool-card" data-tool-name='3-1/2" 21° Framing Nailer'>
+<img alt="21 degree framing nailer" class="tool-photo" src="images/tools/metabo_hpt_nailer.jpg"/>
+<h3>3-1/2" 21° Framing Nailer</h3>
+<p class="tool-desc">
             Full-size framing nailer for walls, decks, and structural framing work.
           </p>
-          <p class="tool-price">
-            <strong>$12 / hr</strong> · $35 / day · $100 / week
+<p class="tool-price">
+<strong>$12 / hr</strong> · $35 / day · $100 / week
           </p>
-          <p class="tool-note">Requires a capable compressor and proper framing nails.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- POWER TOOLS (non-saw) -->
-    <section id="power-tools">
-      <h2>Cordless Power Tools (M18 Platform)</h2>
-      <div class="tool-grid">
-
-        <!-- M18 Grinder -->
-        <div class="card tool-card" data-tool-name="M18 Brushless Grinder">
-          <img src="images/tools/milwaukee-angle-grinder.png"
-               alt="Milwaukee M18 grinder"
-               class="tool-photo">
-          <h3>M18 Brushless Grinder</h3>
-          <p class="tool-desc">
+<p class="tool-note">Requires a capable compressor and proper framing nails.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+</div>
+</section>
+<!-- POWER TOOLS (non-saw) -->
+<section id="power-tools">
+<h2>Cordless Power Tools (M18 Platform)</h2>
+<div class="tool-grid">
+<!-- M18 Grinder -->
+<div class="card tool-card" data-tool-name="M18 Brushless Grinder">
+<img alt="Milwaukee M18 grinder" class="tool-photo" src="images/tools/milwaukee-angle-grinder.png"/>
+<h3>M18 Brushless Grinder</h3>
+<p class="tool-desc">
             For grinding, cutting metal, and surface prep on the M18 cordless platform.
           </p>
-          <p class="tool-price">
-            <strong>$8 / hr</strong> · $20 / day · $55 / week
+<p class="tool-price">
+<strong>$8 / hr</strong> · $20 / day · $55 / week
           </p>
-          <p class="tool-note">Discs not included; ask about add-on consumables.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- XR 20V Jigsaw -->
-        <div class="card tool-card" data-tool-name="XR 20V Jigsaw">
-          <img src="images/tools/dewalt-jig-saw.png"
-               alt="DeWalt XR 20V jigsaw"
-               class="tool-photo">
-          <h3>XR 20V Max Brushless Jigsaw</h3>
-          <p class="tool-desc">
+<p class="tool-note">Discs not included; ask about add-on consumables.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- XR 20V Jigsaw -->
+<div class="card tool-card" data-tool-name="XR 20V Jigsaw">
+<img alt="DeWalt XR 20V jigsaw" class="tool-photo" src="images/tools/dewalt-jig-saw.png"/>
+<h3>XR 20V Max Brushless Jigsaw</h3>
+<p class="tool-desc">
             Smooth jigsaw for curves, cutouts, and detailed finish work.
           </p>
-          <p class="tool-price">
-            <strong>$8 / hr</strong> · $22 / day · $65 / week
+<p class="tool-price">
+<strong>$8 / hr</strong> · $22 / day · $65 / week
           </p>
-          <p class="tool-note">Bring your own blades or request a blade pack.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 Drill Driver -->
-        <div class="card tool-card" data-tool-name="M18 Drill Driver">
-          <img src="images/tools/milwaukee-M18-drill.jpg"
-               alt="Milwaukee M18 drill driver"
-               class="tool-photo">
-          <h3>M18 Drill/Driver</h3>
-          <p class="tool-desc">
+<p class="tool-note">Bring your own blades or request a blade pack.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 Drill Driver -->
+<div class="card tool-card" data-tool-name="M18 Drill Driver">
+<img alt="Milwaukee M18 drill driver" class="tool-photo" src="images/tools/milwaukee-M18-drill.jpg"/>
+<h3>M18 Drill/Driver</h3>
+<p class="tool-desc">
             Cordless drill/driver for general drilling and fastening.
           </p>
-          <p class="tool-price">
-            <strong>$8 / hr</strong> · $20 / day · $55 / week
+<p class="tool-price">
+<strong>$8 / hr</strong> · $20 / day · $55 / week
           </p>
-          <p class="tool-note">Great base tool for almost any project.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 Impact Driver -->
-        <div class="card tool-card" data-tool-name="M18 Impact Driver">
-          <img src="images/tools/milwaukee-M18-impact-driver.jpg"
-               alt="Milwaukee M18 impact driver"
-               class="tool-photo">
-          <h3>M18 1/4&quot; Impact Driver</h3>
-          <p class="tool-desc">
+<p class="tool-note">Great base tool for almost any project.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 Impact Driver -->
+<div class="card tool-card" data-tool-name="M18 Impact Driver">
+<img alt="Milwaukee M18 impact driver" class="tool-photo" src="images/tools/milwaukee-M18-impact-driver.jpg"/>
+<h3>M18 1/4" Impact Driver</h3>
+<p class="tool-desc">
             Compact impact driver for screws, structural fasteners, and lag bolts.
           </p>
-          <p class="tool-price">
-            <strong>$8 / hr</strong> · $20 / day · $55 / week
+<p class="tool-price">
+<strong>$8 / hr</strong> · $20 / day · $55 / week
           </p>
-          <p class="tool-note">Use proper impact-rated bits and sockets.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- M18 High Torque Impact Wrench -->
-        <div class="card tool-card" data-tool-name="M18 BL HTIW">
-          <img src="images/tools/milwaukee-impact-wrench.jpg"
-               alt="Milwaukee M18 high torque impact wrench"
-               class="tool-photo">
-          <h3>M18 High Torque Impact Wrench</h3>
-          <p class="tool-desc">
-            High-torque 1/2&quot; impact wrench for automotive, equipment, and heavy fasteners.
+<p class="tool-note">Use proper impact-rated bits and sockets.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- M18 High Torque Impact Wrench -->
+<div class="card tool-card" data-tool-name="M18 BL HTIW">
+<img alt="Milwaukee M18 high torque impact wrench" class="tool-photo" src="images/tools/milwaukee-impact-wrench.jpg"/>
+<h3>M18 High Torque Impact Wrench</h3>
+<p class="tool-desc">
+            High-torque 1/2" impact wrench for automotive, equipment, and heavy fasteners.
           </p>
-          <p class="tool-price">
-            <strong>$8 / hr</strong> · $20 / day · $55 / week
+<p class="tool-price">
+<strong>$8 / hr</strong> · $20 / day · $55 / week
           </p>
-          <p class="tool-note">Sockets not included; bring your own or ask about add-ons.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- BUNDLES -->
-    <section id="bundles">
-      <h2>Tool Bundles</h2>
-      <p class="tool-note">
+<p class="tool-note">Sockets not included; bring your own or ask about add-ons.</p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+</div>
+</section>
+<!-- BUNDLES -->
+<section id="bundles">
+<h2>Tool Bundles</h2>
+<p class="tool-note">
         Bundles are a convenient way to grab multiple tools for one project. Pricing is for the bundle — you can still rent items individually above.
       </p>
-
-      <div class="tool-grid">
-
-        <!-- Trim & Finish Bundle -->
-        <div class="card tool-card" data-tool-name="Trim &amp; Finish Nailer Bundle">
-          <h3>Trim &amp; Finish Bundle</h3>
-          <p class="tool-desc">
+<div class="tool-grid">
+<!-- Trim & Finish Bundle -->
+<div class="card tool-card" data-tool-name="Trim &amp; Finish Nailer Bundle">
+<h3>Trim &amp; Finish Bundle</h3>
+<p class="tool-desc">
             6 Gal. Air Compressor + 18GA Brad Nailer + 16GA Finish Nailer + Hose.
             Perfect for doors, trim, and casing projects.
           </p>
-          <p class="tool-price">
-            <strong>$20 / hr</strong> · $55 / day · $155 / week
+<p class="tool-price">
+<strong>$20 / hr</strong> · $55 / day · $155 / week
           </p>
-          <p class="tool-note">Save vs. renting each tool separately. Nails not included.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- Flooring / Remodel Bundle -->
-        <div class="card tool-card" data-tool-name="Remodel Cutting Bundle">
-          <h3>Remodel Cutting Bundle</h3>
-          <p class="tool-desc">
+<p class="tool-note">Save vs. renting each tool separately. Nails not included.</p>
+<p class="tool-note tool-addons">
+            Service plans: Damage Protection, Extended / Weekend time, Return Anytime. Delivery may be available.
+          </p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- Flooring / Remodel Bundle -->
+<div class="card tool-card" data-tool-name="Remodel Cutting Bundle">
+<h3>Remodel Cutting Bundle</h3>
+<p class="tool-desc">
             60V Miter Saw + FLEXVOLT Table Saw + M18 Multi-Tool.
             Great for room remodels, built-ins, and trim upgrades.
           </p>
-          <p class="tool-price">
-            <strong>$30 / hr</strong> · $85 / day · $250 / week
+<p class="tool-price">
+<strong>$30 / hr</strong> · $85 / day · $250 / week
           </p>
-          <p class="tool-note">Blades/consumables not included. Ask if you need recommendations.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- Outdoor Cleanup Bundle -->
-        <div class="card tool-card" data-tool-name="Outdoor Cleanup Bundle">
-          <h3>Outdoor Cleanup Bundle</h3>
-          <p class="tool-desc">
+<p class="tool-note">Blades/consumables not included. Ask if you need recommendations.</p>
+<p class="tool-note tool-addons">
+            Service plans: Damage Protection, Extended / Weekend time, Return Anytime. Delivery may be available.
+          </p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- Outdoor Cleanup Bundle -->
+<div class="card tool-card" data-tool-name="Outdoor Cleanup Bundle">
+<h3>Outdoor Cleanup Bundle</h3>
+<p class="tool-desc">
             Gas Chainsaw + M18 Compact Blower + 16 Gal. Shop Vac.
             Handle limbs, debris, and cleanup in one go.
           </p>
-          <p class="tool-price">
-            <strong>$26 / hr</strong> · $70 / day · $210 / week
+<p class="tool-price">
+<strong>$26 / hr</strong> · $70 / day · $210 / week
           </p>
-          <p class="tool-note">Fuel, bar oil, and bags/filters not included.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-        <!-- Drill & Driver Bundle -->
-        <div class="card tool-card" data-tool-name="Drill &amp; Driver Bundle">
-          <h3>Drill &amp; Driver Bundle</h3>
-          <p class="tool-desc">
-            M18 Drill/Driver + M18 1/4&quot; Impact Driver, with shared batteries and charger.
+<p class="tool-note">Fuel, bar oil, and bags/filters not included.</p>
+<p class="tool-note tool-addons">
+            Service plans: Damage Protection, Extended / Weekend time, Return Anytime. Delivery may be available.
           </p>
-          <p class="tool-price">
-            <strong>$14 / hr</strong> · $38 / day · $115 / week
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+<!-- Drill & Driver Bundle -->
+<div class="card tool-card" data-tool-name="Drill &amp; Driver Bundle">
+<h3>Drill &amp; Driver Bundle</h3>
+<p class="tool-desc">
+            M18 Drill/Driver + M18 1/4" Impact Driver, with shared batteries and charger.
           </p>
-          <p class="tool-note">Perfect starter pack for most DIY jobs and light contracting.</p>
-          <button type="button" class="btn btn-outline add-to-cart-btn">Add to Booking</button>
-        </div>
-
-      </div>
-
-      <div class="card" style="margin-top:1.5rem;">
-        <h3>Need a custom bundle?</h3>
-        <p class="tool-desc">
+<p class="tool-price">
+<strong>$14 / hr</strong> · $38 / day · $115 / week
+          </p>
+<p class="tool-note">Perfect starter pack for most DIY jobs and light contracting.</p>
+<p class="tool-note tool-addons">
+            Service plans: Damage Protection, Extended / Weekend time, Return Anytime. Delivery may be available.
+          </p>
+<button class="btn btn-outline add-to-cart-btn" type="button">Add to Booking</button>
+</div>
+</div>
+<div class="card" style="margin-top:1.5rem;">
+<h3>Need a custom bundle?</h3>
+<p class="tool-desc">
           If you don’t see the combo you need, add a few tools to your booking list and tell us in the notes that
           you’d like <strong>bundle pricing</strong>. We’ll see if we can give you a package rate.
         </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© <span id="year"></span> HomeFix Rentals. All rights reserved.</p>
-      <p>Bessemer City, NC · Call/Text: <a href="tel:7049742879">(704) 974-2879</a></p>
-    </div>
-  </footer>
-
-  <script>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner"><p>© <span id="year"></span> HomeFix Rentals. All rights reserved.</p><p>Bessemer City, NC · Call/Text: <a href="tel:7046298466">(704) 629-8466</a> · <a href="faq.html">FAQ</a></p></div>
+</footer>
+<script>
     // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
